@@ -5,32 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The M: Counter</title>
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
-    <div>
-        I am writing a pyscript application
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col">
+                <input type="text" class="form-control" id="todo_text">
+            </div>
+            <div class="col">
+                <button class="btn btn-primary">Add Task</button>
+            </div>
+        </div>
     </div>
-    <div id="put_data">
+
+
+    <py-script src="./app.py"></py-script> 
+
+
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    
+        <div id="put_data">
 
     </div>
 
     <py-script>
-        <!-- import math
+        import math
         file = open("test.py", "a")
         file.write("""print("Hello World")""")
         file.close()
         file = open("test.py", "r")
         data = file.read()
-        print(data) -->
+        print(data) 
         pyscript.write('put_data', "Something from python")
     </py-script>
-
-
-   
-
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-</body>
-</html>
+    
+    
+    -->
