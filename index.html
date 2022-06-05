@@ -12,12 +12,23 @@
 
     <div class="container mt-3">
         <div class="row justify-content-center">
-            <div class="col">
-                <input type="text" class="form-control" id="todo_text">
+            <div class="col-2"></div>
+            <div class="col-6">
+                <input type="text" 
+                       placeholder="What's on your mind" 
+                       class="form-control" 
+                       id="todoTextInput">
             </div>
-            <div class="col">
-                <button class="btn btn-primary">Add Task</button>
+            <div class="col-4">
+                <button pys-onClick="getTodo"  class="btn btn-primary" id="getTodoBtn">Add Task</button>
             </div>
+        </div>
+        <div class="row justify-content-center mt-5" >
+            <div class="col-2"></div>
+            <div class="col-6" >
+                <h1 id="output"></h1>
+            </div>
+            <div class="col-4"></div>
         </div>
     </div>
 

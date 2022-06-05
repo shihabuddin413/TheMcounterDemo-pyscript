@@ -1,3 +1,14 @@
+
+def getTodo(*args, **kwargs):
+    outputbox = Element('output')
+    inputBox = Element('todoTextInput')
+
+    data =  inputBox.value
+
+    console.log(Element)
+
+    outputbox.write(data)
+
 class Todo():
     def __init__(self):
         self.todos = []
@@ -15,5 +26,5 @@ class Todo():
         self.todos = tmp
 
 
-mTodoHandler = Todo()
+# mTodoHandler = Todo()
 
