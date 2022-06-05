@@ -9,7 +9,13 @@
 </head>
 <body>
     <py-script>
-        print("hello World")
+        import math
+        file = open("test.py", "a")
+        file.write("""print("Hello World")""")
+        file.close()
+        file = open("test.py", "r")
+        data = file.read()
+        print(data)
     </py-script>
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </body>
